@@ -1,0 +1,281 @@
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: White;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 10%;
+  background-color: #888;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #888;
+  margin: 5% auto 15% auto;
+  width: 20%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    background-color: #888;
+    width: 100%;
+  }
+}
+
+.top-menu {
+  position: fixed;
+  height: 100%;
+  width: 101%;
+  top: 91.5%;
+  left: -5px;
+  background: rgba(34, 34, 34, .6);
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-item {
+  float: left;
+  cursor: pointer;
+}
+
+#left-items ul {
+  display: none;
+  background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  opacity: 1;
+  position: absolute;
+  bottom: 100%;
+  top: 100%;
+}
+
+#left-items li:hover ul {
+  display: block;
+  top: -25.5%;
+  margin-left: -90px;
+  list-style-type: none;
+}
+
+.right-item {
+  float: right;
+}
+
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #ab1d70;
+  transition: .3s linear;
+}
+
+.menu-main a:hover {
+  background: rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 830px) {
+  .menu-main {
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  .menu-main li {
+    float: none;
+    display: inline-block;
+  }
+
+  .menu-main a {
+    line-height: normal;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 630px) {
+  .menu-main li {
+    display: block;
+  }
+}
+
+body {
+  background-size: 100%
+}
+
+td {
+  background: none;
+  /* Цвет фона */
+  opacity: 0.7;
+  /* Полупрозрачность таблицы */
+  filter: alpha(Opacity=60);
+  /* Для IE */
+}
+
+.footer {
+  height: 80px;
+  width: 90px;
+}
+
+.shadowtext {
+  text-shadow: 2px 2px 3px black, 0 0 2em red;
+  /* Параметры тени */
+  color: white;
+  /* Белый цвет текста */
+  font-size: 2em;
+  /* Размер надписи */
+  cursor: default;
+}
+
+.fr {
+  background-color: #C0C0C0;
+  font-weight: bold;
+}
+
+.block1 {
+  width: 100.1%;
+    min-height: 1.7vh;
+  background-color: linear-gradient(to bottom, rgba(255, 0, 255, 0.7), rgba(255, 255, 0, 0.7));
+  margin-left: -10px;
+  margin-top: 100px;
+  padding: 0px;
+  padding-right: 0px;
+  border: solid 0px black;
+  float: left;
+  opacity: 0.9;
+}
+
+video#video {
+  min-height: 113.7vh;
+  min-width: 50%; 
+  top: 0px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0
+  margin-top: -390px;
+  background-color: #000000;
+  opacity: 0.25;
+}
+
+@media screen and (max-width:768px; ) {
+  video#video {
+    margin-left: -50%;
+    min-width: 150%;
+  }
+}
+
+@media screen and (max-width:450px) {
+  video#video {
+    margin-left: -100%;
+    min-width: 200%;
+  }
+}

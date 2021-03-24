@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Мир игр</title>
+</head>
+<style>
+	#left-item ul {
+		display: none;
+		background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+		opacity: 1;
+		position: absolute;
+		bottom: 100%;
+		top: 100%;
+	}
+
+	#left-item li:hover ul {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: -300%;
+	}
+
+	@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+	body {
+		background: url(./images/fon.jpg)#000000;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
+
+<body>
+	<p align="center" class="shadowtext">
+		<font face="TAHOMA" size="10" aling="center" color=#ab1d70>
+			<b>Мир Игр</b>
+		</font>
+	</p>
+	<form>
+		<p align="CENTER">
+	</form>
+
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+				<img src="./images/img_avatar2.png" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<label for="uname"><b>Логин</b></label>
+				<input class="fr" type="text" placeholder="Введите логин" name="uname" required>
+
+				<label for="psw"><b>Пароль</b></label>
+				<input class="fr" type="password" placeholder="Введите пароль" name="psw" required>
+
+				<button type="submit">Войти</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember">
+					<font color=#0047ab face=arial><b>Запомнить меня</b></font>
+				</label>
+			</div>
+
+			<div class="container" style="background-color:#888;">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+					<font color=#0047ab face=arial><b>Отмена</b></font>
+				</button>
+				<span class="psw">Забыл <a href="#">Пароль?</a></span>
+			</div>
+		</form>
+	</div>
+
+	<script>
+		var modal = document.getElementById('id01');
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+
+
+	<nav class="top-menu">
+		<ul id=left-items class="menu-main">
+			<li class="left-item"><a class="shadowtext" href="news.html"><b>Новости</b></a></li>
+			<li class="left-item"><a class="shadowtext" href="#"><b>Анонсы</b></a>
+				<ul>
+					<li><a class="shadowtext" href="doometernal.html">DOOM ETERNAL</a></li>
+					<li><a class="shadowtext" href="forza.html">FORZA HORIZON 4</a></li>
+					<li><a class="shadowtext" href="cyberpunk.html">CYBERPUNK 2077</a></li>
+				</ul>
+			<li class="left-item"><a class="shadowtext" href="Gallery.html"><b>Меню игр</b></a></li>
+			<li class="left-item"><a class="shadowtext" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Личный кабинет</b></a></li>
+			<li class="right-item"><a href="https://vk.com/khvorostov2022" class="footer"><img align="center" width="90%" height="90%" src="./images/vk.png" alt=""></a></li>
+		</ul>
+	</nav>
+
+</body>
+
+</html>
